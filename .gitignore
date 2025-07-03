@@ -1,0 +1,17 @@
+*__pycache__/
+models/
+notebooks/
+.venv/
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pkl
+*.log
+*.tsv
+*.json
+*.xlsx
+*.h5
+*.db
+*.sqlite

@@ -1,0 +1,23 @@
+seed: 42
+
+data:
+  train_path: data/train.csv
+  test_path: data/test.csv
+  sample_path: data/sample_submission.csv
+  target: Personality
+
+model:
+  path: models/catboost_v1.cbm
+  
+# Added ensemble configuration for potential stacking[6]
+ensemble:
+  enabled: false
+  models_dir: models/ensemble/
+
+submission:
+  path: submission/submission.csv
+
+# Memory optimization for M1 Air[5]
+performance:
+  max_memory_gb: 6  # Leave 2GB for system
+  n_jobs: 2  # Conservative for 8GB RAM
